@@ -7,6 +7,15 @@ const viteConfig = defineConfig((env) => {
   const isDevMode = env.mode.includes('dev');
   return {
     base: isDevMode ? '/' : '/1Piece/',
+    build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html'),
+      },
+      
+    },
+  },
     root: '.',
     plugins: [
       react({
