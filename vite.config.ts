@@ -4,10 +4,8 @@ import { defineConfig } from 'vite';
 import { reactClickToComponent } from 'vite-plugin-react-click-to-component';
 
 const viteConfig = defineConfig(() => {
-  
   return {
     base: '/',
-    
     plugins: [
       react({
         jsxRuntime: 'automatic',
