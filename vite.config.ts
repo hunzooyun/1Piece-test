@@ -7,16 +7,7 @@ const viteConfig = defineConfig(() => {
   
   return {
     base: '/',
-    build: {
-    outDir: 'dist',
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
-      
-    },
-  },
-    root: '.',
+    
     plugins: [
       react({
         jsxRuntime: 'automatic',
